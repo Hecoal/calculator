@@ -15,7 +15,12 @@ function App() {
   };
 
   const result=()=>{
-    setInput(evaluate(input));
+    if(input){
+      setInput(evaluate(input));
+    }else{
+      alert('Choose some numbers!');
+    }
+    
   }
   return (
     <div className="App">
